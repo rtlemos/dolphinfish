@@ -31,31 +31,319 @@ Out of the four models, the Fox model provided the lowest value of DIC
 
 \*\*\* Table 1. Fox model summary
 \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
-Inference for Bugs model at “/tmp/RtmpZgSzFO/fox\_model.txt”, Current: 1
-chains, each with 10000 iterations (first 5000 discarded), n.thin = 10
-Cumulative: n.sims = 5000 iterations saved mean sd 2.5% 25% 50% 75%
-97.5% K 72510.1 18374.6 33289.5 59457.5 74965.0 87845.0 98650.2 r 0.5
-0.3 0.0 0.2 0.5 0.7 1.0 lq -13.0 0.4 -13.6 -13.2 -13.0 -12.8 -12.1
-lsigma -3.7 0.3 -4.3 -4.0 -3.8 -3.5 -3.0 MSY 1190.7 764.7 57.2 550.6
-1107.0 1757.2 2747.0 BMSY 26674.9 6759.7 12249.7 21870.0 27580.0 32320.0
-36290.0 FMSY 0.0 0.0 0.0 0.0 0.0 0.1 0.1 mean\[1\] -1.8 0.1 -2.1 -1.9
--1.8 -1.8 -1.6 mean\[2\] -1.8 0.1 -2.0 -1.9 -1.8 -1.8 -1.6 mean\[3\]
--1.7 0.1 -1.9 -1.8 -1.7 -1.7 -1.5 mean\[4\] -1.7 0.1 -1.9 -1.7 -1.7 -1.6
--1.4 mean\[5\] -1.6 0.1 -1.8 -1.7 -1.6 -1.6 -1.4 mean\[6\] -1.6 0.1 -1.8
--1.7 -1.6 -1.5 -1.4 mean\[7\] -1.7 0.1 -1.9 -1.8 -1.7 -1.7 -1.5
-mean\[8\] -1.8 0.1 -2.0 -1.8 -1.8 -1.7 -1.6 mean\[9\] -1.7 0.1 -1.9 -1.8
--1.7 -1.6 -1.5 mean\[10\] -1.5 0.1 -1.7 -1.6 -1.5 -1.5 -1.3 mean\[11\]
--1.6 0.1 -1.8 -1.6 -1.6 -1.5 -1.3 mean\[12\] -1.3 0.1 -1.5 -1.4 -1.3
--1.3 -1.1 mean\[13\] -1.3 0.1 -1.5 -1.3 -1.3 -1.2 -1.1 mean\[14\] -1.3
-0.1 -1.5 -1.4 -1.3 -1.2 -1.1 mean\[15\] -1.5 0.1 -1.7 -1.5 -1.5 -1.4
--1.2 mean\[16\] -1.6 0.1 -1.8 -1.6 -1.6 -1.5 -1.3 mean\[17\] -1.6 0.1
--1.8 -1.7 -1.6 -1.6 -1.4 mean\[18\] -1.7 0.1 -1.9 -1.7 -1.7 -1.6 -1.5
-mean\[19\] -1.7 0.1 -1.9 -1.8 -1.7 -1.6 -1.5 mean\[20\] -1.8 0.1 -2.1
--1.9 -1.8 -1.7 -1.6 deviance -18.3 6.1 -29.1 -22.7 -18.7 -14.5 -5.1
 
-DIC info (using the rule, pD = Dbar-Dhat) pD = 6.6 and DIC = -11.8 DIC
-is an estimate of expected predictive error (lower deviance is better).
-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+Inference for Bugs model at “/tmp/RtmpZgSzFO/fox\_model.txt”,
+
+Current: 1 chains, each with 10000 iterations (first 5000 discarded),
+n.thin = 10
+
+Cumulative: n.sims = 5000 iterations saved
+
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>mean</th>
+<th>sd</th>
+<th>2.50%</th>
+<th>25.00%</th>
+<th>50.00%</th>
+<th>75.00%</th>
+<th>97.50%</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>K</td>
+<td>72510.1</td>
+<td>18374.6</td>
+<td>33289.5</td>
+<td>59457.5</td>
+<td>74965</td>
+<td>87845</td>
+<td>98650.2</td>
+</tr>
+<tr class="even">
+<td>r</td>
+<td>0.5</td>
+<td>0.3</td>
+<td>0</td>
+<td>0.2</td>
+<td>0.5</td>
+<td>0.7</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>lq</td>
+<td>-13</td>
+<td>0.4</td>
+<td>-13.6</td>
+<td>-13.2</td>
+<td>-13</td>
+<td>-12.8</td>
+<td>-12.1</td>
+</tr>
+<tr class="even">
+<td>lsigma</td>
+<td>-3.7</td>
+<td>0.3</td>
+<td>-4.3</td>
+<td>-4</td>
+<td>-3.8</td>
+<td>-3.5</td>
+<td>-3</td>
+</tr>
+<tr class="odd">
+<td>MSY</td>
+<td>1190.7</td>
+<td>764.7</td>
+<td>57.2</td>
+<td>550.6</td>
+<td>1107</td>
+<td>1757.2</td>
+<td>2747</td>
+</tr>
+<tr class="even">
+<td>BMSY</td>
+<td>26674.9</td>
+<td>6759.7</td>
+<td>12249.7</td>
+<td>21870</td>
+<td>27580</td>
+<td>32320</td>
+<td>36290</td>
+</tr>
+<tr class="odd">
+<td>FMSY</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0.1</td>
+<td>0.1</td>
+</tr>
+<tr class="even">
+<td>mean[1]</td>
+<td>-1.8</td>
+<td>0.1</td>
+<td>-2.1</td>
+<td>-1.9</td>
+<td>-1.8</td>
+<td>-1.8</td>
+<td>-1.6</td>
+</tr>
+<tr class="odd">
+<td>mean[2]</td>
+<td>-1.8</td>
+<td>0.1</td>
+<td>-2</td>
+<td>-1.9</td>
+<td>-1.8</td>
+<td>-1.8</td>
+<td>-1.6</td>
+</tr>
+<tr class="even">
+<td>mean[3]</td>
+<td>-1.7</td>
+<td>0.1</td>
+<td>-1.9</td>
+<td>-1.8</td>
+<td>-1.7</td>
+<td>-1.7</td>
+<td>-1.5</td>
+</tr>
+<tr class="odd">
+<td>mean[4]</td>
+<td>-1.7</td>
+<td>0.1</td>
+<td>-1.9</td>
+<td>-1.7</td>
+<td>-1.7</td>
+<td>-1.6</td>
+<td>-1.4</td>
+</tr>
+<tr class="even">
+<td>mean[5]</td>
+<td>-1.6</td>
+<td>0.1</td>
+<td>-1.8</td>
+<td>-1.7</td>
+<td>-1.6</td>
+<td>-1.6</td>
+<td>-1.4</td>
+</tr>
+<tr class="odd">
+<td>mean[6]</td>
+<td>-1.6</td>
+<td>0.1</td>
+<td>-1.8</td>
+<td>-1.7</td>
+<td>-1.6</td>
+<td>-1.5</td>
+<td>-1.4</td>
+</tr>
+<tr class="even">
+<td>mean[7]</td>
+<td>-1.7</td>
+<td>0.1</td>
+<td>-1.9</td>
+<td>-1.8</td>
+<td>-1.7</td>
+<td>-1.7</td>
+<td>-1.5</td>
+</tr>
+<tr class="odd">
+<td>mean[8]</td>
+<td>-1.8</td>
+<td>0.1</td>
+<td>-2</td>
+<td>-1.8</td>
+<td>-1.8</td>
+<td>-1.7</td>
+<td>-1.6</td>
+</tr>
+<tr class="even">
+<td>mean[9]</td>
+<td>-1.7</td>
+<td>0.1</td>
+<td>-1.9</td>
+<td>-1.8</td>
+<td>-1.7</td>
+<td>-1.6</td>
+<td>-1.5</td>
+</tr>
+<tr class="odd">
+<td>mean[10]</td>
+<td>-1.5</td>
+<td>0.1</td>
+<td>-1.7</td>
+<td>-1.6</td>
+<td>-1.5</td>
+<td>-1.5</td>
+<td>-1.3</td>
+</tr>
+<tr class="even">
+<td>mean[11]</td>
+<td>-1.6</td>
+<td>0.1</td>
+<td>-1.8</td>
+<td>-1.6</td>
+<td>-1.6</td>
+<td>-1.5</td>
+<td>-1.3</td>
+</tr>
+<tr class="odd">
+<td>mean[12]</td>
+<td>-1.3</td>
+<td>0.1</td>
+<td>-1.5</td>
+<td>-1.4</td>
+<td>-1.3</td>
+<td>-1.3</td>
+<td>-1.1</td>
+</tr>
+<tr class="even">
+<td>mean[13]</td>
+<td>-1.3</td>
+<td>0.1</td>
+<td>-1.5</td>
+<td>-1.3</td>
+<td>-1.3</td>
+<td>-1.2</td>
+<td>-1.1</td>
+</tr>
+<tr class="odd">
+<td>mean[14]</td>
+<td>-1.3</td>
+<td>0.1</td>
+<td>-1.5</td>
+<td>-1.4</td>
+<td>-1.3</td>
+<td>-1.2</td>
+<td>-1.1</td>
+</tr>
+<tr class="even">
+<td>mean[15]</td>
+<td>-1.5</td>
+<td>0.1</td>
+<td>-1.7</td>
+<td>-1.5</td>
+<td>-1.5</td>
+<td>-1.4</td>
+<td>-1.2</td>
+</tr>
+<tr class="odd">
+<td>mean[16]</td>
+<td>-1.6</td>
+<td>0.1</td>
+<td>-1.8</td>
+<td>-1.6</td>
+<td>-1.6</td>
+<td>-1.5</td>
+<td>-1.3</td>
+</tr>
+<tr class="even">
+<td>mean[17]</td>
+<td>-1.6</td>
+<td>0.1</td>
+<td>-1.8</td>
+<td>-1.7</td>
+<td>-1.6</td>
+<td>-1.6</td>
+<td>-1.4</td>
+</tr>
+<tr class="odd">
+<td>mean[18]</td>
+<td>-1.7</td>
+<td>0.1</td>
+<td>-1.9</td>
+<td>-1.7</td>
+<td>-1.7</td>
+<td>-1.6</td>
+<td>-1.5</td>
+</tr>
+<tr class="even">
+<td>mean[19]</td>
+<td>-1.7</td>
+<td>0.1</td>
+<td>-1.9</td>
+<td>-1.8</td>
+<td>-1.7</td>
+<td>-1.6</td>
+<td>-1.5</td>
+</tr>
+<tr class="odd">
+<td>mean[20]</td>
+<td>-1.8</td>
+<td>0.1</td>
+<td>-2.1</td>
+<td>-1.9</td>
+<td>-1.8</td>
+<td>-1.7</td>
+<td>-1.6</td>
+</tr>
+<tr class="even">
+<td>deviance</td>
+<td>-18.3</td>
+<td>6.1</td>
+<td>-29.1</td>
+<td>-22.7</td>
+<td>-18.7</td>
+<td>-14.5</td>
+<td>-5.1</td>
+</tr>
+</tbody>
+</table>
+
+DIC info (using the rule, pD = Dbar-Dhat)
+
+pD = 6.6 and DIC = -11.8
+
+DIC is an estimate of expected predictive error (lower deviance is
+better).
+
+------------------------------------------------------------------------
 
 All models struggled to provide a narrow distribution for the carrying
 capacity parameter K (Figure 1).
