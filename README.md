@@ -1,3 +1,8 @@
+Analysis of dolphinfish catches in Pakistan
+===========================================
+
+Date: 6/14/2020
+
 Motivation
 ----------
 
@@ -349,38 +354,61 @@ All models struggled to provide a narrow distribution for the carrying
 capacity parameter K (Figure 1).
 
 ![Figure 1. Posterior distribution of the carrying capacity parameter
-K.](figures/K.png) With the exception of the Fox model, the posterior
-distribution of MSY displayed a heavy right tail (Figures 2a and 2b),
-signalling considerable uncertainty about this quantity.
+K.](figures/K.png)
+
+Figure 1. Posterior distribution of the carrying capacity parameter K.
+
+With the exception of the Fox model, the posterior distribution of MSY
+displayed a heavy right tail (Figures 2a and 2b), signalling
+considerable uncertainty about this quantity.
 
 ![Figure 2a. Posterior distribution of MSY.](figures/MSY.png)
 
+Figure 2a. Posterior distribution of MSY.
+
 ![Figure 2b. Posterior distribution of MSY for the Fox model
 only.](figures/MSY2.png)
+
+Figure 2b. Posterior distribution of MSY for the Fox model only.
 
 Models differed in terms of their estimates of *B*<sub>*M**S**Y*</sub>,
 with the Fox model providing higher density between 30 and 35 thousand
 tonnes.
 
 ![Figure 3. Posterior distribution of the carrying capacity parameter
-K.](figures/BMSY.png) The Fox model provided a slightly lower posterior
-mean for the log-transformed measurement error variance parameter *σ*
-(Figure 4).
+K.](figures/BMSY.png)
+
+Figure 3. Posterior distribution of the carrying capacity parameter K.
+
+The Fox model provided a slightly lower posterior mean for the
+log-transformed measurement error variance parameter *σ* (Figure 4).
 
 ![Figure 4. Posterior distribution of the log-transformed value of
-*σ*.](figures/log_sigma.png) Models were mostly in good agreement
-regarding the log-catchability parameter *χ*, although the Fox model
-provided slightly lower estimates (Figure 5).
+*σ*.](figures/log_sigma.png)
+
+Figure 4. Posterior distribution of the log-transformed value of *σ*.
+
+Models were mostly in good agreement regarding the log-catchability
+parameter *χ*, although the Fox model provided slightly lower estimates
+(Figure 5).
 
 ![Figure 5. Posterior distribution of log-catchability
-*χ*.](figures/chi.png) Finally, in terms of fit, the Fox model is again
-the only model that provides slightly different estimates, which appear
-to fit the data a little better (Figure 6).
+*χ*.](figures/chi.png)
 
-![Figure 7. Model fits.](figures/fit.png) With respect to initial (i.e.,
-1990) depletion, the Fox model estimates it around 16.5%, with 95%
-credibility interval (13.5%, 22.3%). These numbers were obtained by
-exponentiating the values of `mean[1]` in Table 1.
+Figure 5. Posterior distribution of log-catchability *χ*.
+
+Finally, in terms of fit, the Fox model is again the only model that
+provides slightly different estimates, which appear to fit the data a
+little better (Figure 6).
+
+![Figure 6. Model fits.](figures/fit.png)
+
+Figure 6. Model fits (lines) to observed CPUE (black circles).
+
+With respect to initial (i.e., 1990) depletion, the Fox model estimates
+it around 16.5%, with 95% credibility interval (13.5%, 22.3%). These
+numbers were obtained by exponentiating the values of `mean[1]` in Table
+1.
 
 ### Conclusion
 
